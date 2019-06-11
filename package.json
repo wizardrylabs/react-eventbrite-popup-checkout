@@ -1,0 +1,40 @@
+{
+  "name": "react-eventbrite-popup-checkout",
+  "version": "1.0.0",
+  "description": "A React component for the Eventbrite checkout widget",
+  "main": "dist/main.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vanstartupweek/react-eventbrite-popup-checkout.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vanstartupweek/react-eventbrite-popup-checkout/issues"
+  },
+  "author": "Vancouver Startup Society <tech@vanstartupweek.ca>",
+  "homepage": "https://github.com/vanstartupweek/react-eventbrite-popup-checkout",
+  "contributors": [
+    "Maz Ahmadi (https://github.com/cmdshepard)"
+  ],
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "prepublish": "npx webpack --config webpack.config.js"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "react": "^16.8.6",
+    "webpack": "^4.33.0",
+    "webpack-cli": "^3.3.4"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "uuid": "^3.3.2"
+  }
+}
