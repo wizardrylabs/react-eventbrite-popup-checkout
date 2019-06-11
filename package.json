@@ -1,6 +1,6 @@
 {
   "name": "react-eventbrite-popup-checkout",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React component for the Eventbrite checkout widget",
   "main": "dist/main.js",
   "repository": {

@@ -23,7 +23,7 @@ class MyApp extends React.Component {
   render() {
     return (
       <div>
-        <EventbriteButton ebEventId='12555555' >Checkout</EventbriteButton>
+        <EventbriteButton ebEventId='12555555'>Checkout</EventbriteButton>
       </div>
     );
   }
