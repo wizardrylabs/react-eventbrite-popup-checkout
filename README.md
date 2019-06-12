@@ -1,6 +1,8 @@
 # React Eventbrite Popup Checkout
 A React component that bootstraps Eventbrite's popup checkout widget.
 
+**Note:** Popup will only trigger if your app is served with **HTTPS**. Otherwise a new window is opened that links to your Eventbrite event page.
+
 ## Install
 If using NPM:
 ```

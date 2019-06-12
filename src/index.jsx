@@ -4,9 +4,7 @@ import { v4 as uuid } from 'uuid';
 
 export default class EventbritePopupCheckout extends React.Component {
 
-  state = {
-    isEventbriteLoaded: false
-  };
+  state = { isEventbriteLoaded: false };
 
   /** @type {string} */
   elementId = uuid();
@@ -23,6 +21,10 @@ export default class EventbritePopupCheckout extends React.Component {
 
   /** @returns {Promise<{ createWidget: Function }>} */
   fetchEBWidgets = () => new Promise((resolve, reject) => {
+    if (window.EBWidgets) {
+      return resolve(window.EBWidgets);
+    }
+
     const { ebScriptPath } = this.props;
     const script = document.createElement('script');
     script.id = this.scriptId;
