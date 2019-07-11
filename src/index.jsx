@@ -43,7 +43,11 @@ export default class EventbritePopupCheckout extends React.Component {
     document.head.appendChild(script);
   });
 
-  handleClick = () => {
+  handleClick = (e) => {
+    if (this.props.onClick) {
+      this.props.onClick(e);
+    }
+
     if (this.state.isEventbriteLoaded) { return; }
     const url = `https://www.eventbrite.com/e/${this.props.ebEventId}`;
     window.open(url, '_blank');
@@ -77,13 +81,17 @@ export default class EventbritePopupCheckout extends React.Component {
   }
 
   render() {
-    const { children, className } = this.props;
+    const { children, className, component: Component } = this.props;
 
     return (
-      <button
+      <Component
         id={this.buttonId}
         className={className}
-        onClick={this.handleClick}>{children}</button>
+        onClick={this.handleClick}
+        {...componentProps}
+      >
+        {children}
+      </Component>
     )
   }
 
@@ -92,14 +100,19 @@ export default class EventbritePopupCheckout extends React.Component {
     ebEventId: PropTypes.string.isRequired,
     ebScriptPath: PropTypes.string,
     isModal: PropTypes.bool,
-    onOrderComplete: PropTypes.func
+    onOrderComplete: PropTypes.func,
+    onClick: PropTypes.func,
+    component: PropTypes.node,
+    componentProps: PropTypes.shape({}),
   };
 
   static defaultProps = {
     className: '',
     ebScriptPath: 'https://www.eventbrite.ca/static/widgets/eb_widgets.js',
     isModal: true,
-    onOrderComplete: () => {}
+    onOrderComplete: () => {},
+    component: 'button',
+    componentProps: {},
   };
 
 }
