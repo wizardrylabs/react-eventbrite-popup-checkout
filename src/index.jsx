@@ -81,7 +81,7 @@ export default class EventbritePopupCheckout extends React.Component {
   }
 
   render() {
-    const { children, className, component: Component } = this.props;
+    const { children, className, component: Component, componentProps } = this.props;
 
     return (
       <Component
