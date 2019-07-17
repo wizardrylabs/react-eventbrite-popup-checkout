@@ -42,4 +42,16 @@ className: <string>
 ebScriptPath: <string>
 isModal: <boolean>
 onOrderComplete: <function>
+onClick: <function>
+component: <node>
+componentProps: <shape>
 ```
+
+#### `onClick`
+Pass an optional `onClick` function to process the click event before the Eventbrite widget gets fired (e.g., for analytics).
+
+#### `component`
+Specify what component to use (e.g., a custom `<Button />`). Defaults to plain HTML button. Note: if using a custom component, it must accept an `id` prop.
+
+#### `componentProps`
+Props to pass to your custom component.
