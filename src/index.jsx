@@ -26,6 +26,10 @@ export default class EventbritePopupCheckout extends React.Component {
     }
 
     const { ebScriptPath } = this.props;
+    
+    const existingEbScript = document.querySelector(`script[src="${ebScriptPath}"]`)
+    if (existingEbScript) {return;}
+
     const script = document.createElement('script');
     script.id = this.scriptId;
     script.async = true;
