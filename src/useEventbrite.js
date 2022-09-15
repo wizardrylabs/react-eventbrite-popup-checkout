@@ -71,9 +71,9 @@ const useEventbrite = ({
     if (modal) {
       config.modalTriggerElementId = id;
     } else {
-      config.iFrameContainerId = id;
-      config.iFrameContainerHeight = iFrameHeight || 425;
-      config.iFrameAutoAdapt = iFrameAutoAdapt || 100;
+      config.iframeContainerId = id;
+      config.iframeContainerHeight = iFrameHeight || 425;
+      config.iframeAutoAdapt = iFrameAutoAdapt || 100;
     }
 
     if (promoCode) {
