@@ -1,4 +1,5 @@
 .idea
+.github
 src
 images
 webpack.config.js
