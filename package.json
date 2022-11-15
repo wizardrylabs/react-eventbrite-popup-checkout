@@ -4,6 +4,7 @@
   "description": "A React component for the Eventbrite checkout widgets",
   "main": "dist/main.js",
   "types": "types.d.ts",
+  "keywords": ["eventbrite", "react"],
   "repository": {
     "type": "git",
     "url": "git://github.com/wizardrylabs/react-eventbrite-popup-checkout.git"

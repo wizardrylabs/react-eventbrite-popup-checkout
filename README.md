@@ -1,4 +1,8 @@
 # React Eventbrite Checkout
+![Build](https://github.com/wizardrylabs/react-eventbrite-popup-checkout/actions/workflows/webpack.yml/badge.svg?branch=master)
+[![npm version](https://badge.fury.io/js/react-eventbrite-popup-checkout.svg)](https://badge.fury.io/js/react-eventbrite-popup-checkout)
+![npm type definitions](https://img.shields.io/npm/types/react-eventbrite-popup-checkout)
+
 A React component that loads Eventbrite's checkout widgets.
 
 ## Install
