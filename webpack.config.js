@@ -9,6 +9,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     library: require('./package.json').name,
     umdNamedDefine: true,
+    globalObject: 'this',
   },
   externals: {
     react: {

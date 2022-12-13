@@ -1,7 +1,6 @@
 import React from 'react';
-import { v4 as uuid } from 'uuid';
 
-const TAG_ID = `EB_SCRIPT_${uuid()}`;
+const TAG_ID = `EB_SCRIPT_${Date.now()}`;
 const SCRIPT_URL = 'https://www.eventbrite.com/static/widgets/eb_widgets.js';
 
 const useEventbrite = ({
@@ -12,7 +11,7 @@ const useEventbrite = ({
   iFrameAutoAdapt,
   promoCode,
 }) => {
-  const id = `EB_${uuid()}`;
+  const id = `EB_${Date.now()}`;
   const [isLoaded, setLoaded] = React.useState(false);
   const onLoad = React.useCallback(() => setLoaded(true), [setLoaded]);
   const onErr = React.useCallback(e => {
