@@ -1,6 +1,6 @@
 {
   "name": "react-eventbrite-popup-checkout",
-  "version": "2.0.10",
+  "version": "2.0.11",
   "description": "A React component for the Eventbrite checkout widgets",
   "main": "dist/main.js",
   "types": "types.d.ts",
@@ -27,7 +27,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "prepublish": "npx webpack --config webpack.config.js"
+    "prepublishOnly": "npx webpack --config webpack.config.js"
   },
   "peerDependencies": {
     "react": ">= 16.8.0",
