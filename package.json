@@ -26,9 +26,6 @@
   ],
   "license": "MIT",
   "private": false,
-  "scripts": {
-    "prepublishOnly": "npx webpack --config webpack.config.js"
-  },
   "peerDependencies": {
     "react": ">= 16.8.0",
     "react-dom": ">= 16.8.0"
