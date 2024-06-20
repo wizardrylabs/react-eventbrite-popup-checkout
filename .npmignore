@@ -3,7 +3,6 @@
 .nvmrc
 src
 images
-webpack.config.js
 CODE_OF_CONDUCT.md
 CONTRIBUTING.md
 SECURITY.md
