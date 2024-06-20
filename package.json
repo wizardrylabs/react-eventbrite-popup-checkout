@@ -1,8 +1,8 @@
 {
   "name": "react-eventbrite-popup-checkout",
-  "version": "2.0.14",
+  "version": "3.0.0",
   "description": "A React component for the Eventbrite checkout widgets",
-  "main": "src/useEventbrite.js",
+  "main": "index.js",
   "types": "types.d.ts",
   "engines": {
     "node": ">= 18"
@@ -22,7 +22,8 @@
   "homepage": "https://github.com/wizardrylabs/react-eventbrite-popup-checkout",
   "contributors": [
     "Maz Ahmadi (https://github.com/cmdshepard)",
-    "Will Kent-Daggett (https://github.com/wkentdag)"
+    "Will Kent-Daggett (https://github.com/wkentdag)",
+    "Benjamin Bai (https://github.com/benyebai)"
   ],
   "license": "MIT",
   "private": false,
