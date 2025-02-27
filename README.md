@@ -83,3 +83,6 @@ const App = () => {
 
 ### Auto Apply Promo Code
 You can pass `promoCode` to the `useEventbrite` hook to automatically apply a promo code during checkout.
+
+## Support
+If you have any questions or need help, feel free to reach out to [Wizard Labs](https://www.wizardlabs.com/).
